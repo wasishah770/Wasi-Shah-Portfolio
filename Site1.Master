@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Portfolio.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Contact-Style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/f2e11f4c42.js" crossorigin="anonymous"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg text-uppercase">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="home.aspx">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-4 rounded" href="home.aspx">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-4 rounded" href="about.aspx">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-lg-4 rounded" href="services.aspx">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-4 rounded" href="contact.aspx">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer-basic" style="background-color: black; color: white;">
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/wasishah770/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.snapchat.com/add/wasishah770?share_id=NgR4S4GlM_8&locale=en-US"><i class="fa-brands fa-snapchat"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100017646512019"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="home.aspx">Home</a></li>
+                <li class="list-inline-item"><a href="services.aspx">Services</a></li>
+                <li class="list-inline-item"><a href="about.aspx">About</a></li>
+                <li class="list-inline-item"><a href="contact.aspx">Contact Me</a></li>
+            </ul>
+            <p class="copyright">&copy; All Right Reserved www.portfolio@wasishah.com</p>
+        </footer>
+    </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="Scripts/bootstrap.bundle.min.js"></script>
+    </form>
+</body>
+</html>

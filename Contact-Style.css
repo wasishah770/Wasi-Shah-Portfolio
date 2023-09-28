@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    background-color: brown;
+    color: white;
+}
+
+.btn:hover{
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+}
